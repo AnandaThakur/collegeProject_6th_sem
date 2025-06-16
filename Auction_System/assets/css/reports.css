@@ -1,0 +1,136 @@
+/* Reports & Logs Styles */
+
+/* Stat Cards */
+.stat-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .stat-card-body {
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .stat-card-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .stat-card-info {
+    flex: 1;
+  }
+  
+  .stat-card-title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+  }
+  
+  .stat-card-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+  
+  /* Filter Card */
+  .card-header {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  
+  .export-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Tables */
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .table th {
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  
+  .table td {
+    vertical-align: middle;
+  }
+  
+  /* Date Range Picker */
+  .flatpickr-input {
+    background-color: #fff !important;
+  }
+  
+  /* Charts */
+  canvas {
+    width: 100% !important;
+    height: 300px !important;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .stat-card-body {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .stat-card-icon {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .export-buttons {
+      margin-top: 0.5rem;
+    }
+  
+    .card-header {
+      flex-direction: column;
+    }
+  
+    .card-header h5 {
+      margin-bottom: 0.5rem;
+    }
+  }
+  
+  /* Print Styles */
+  @media print {
+    .admin-sidebar,
+    .admin-navbar,
+    .content-header,
+    .card-header,
+    .export-buttons {
+      display: none !important;
+    }
+  
+    .admin-content {
+      margin-left: 0 !important;
+      width: 100% !important;
+    }
+  
+    .card {
+      box-shadow: none !important;
+      border: 1px solid #ddd !important;
+    }
+  
+    .table {
+      width: 100% !important;
+    }
+  }
+  
