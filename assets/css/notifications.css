@@ -1,0 +1,207 @@
+/* Notification Styles */
+.notification-list {
+    max-height: 600px;
+    overflow-y: auto;
+  }
+  
+  .notification-item {
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s;
+  }
+  
+  .notification-item:last-child {
+    border-bottom: none;
+  }
+  
+  .notification-item.unread {
+    background-color: #f8f9fa;
+  }
+  
+  .notification-item:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .notification-icon {
+    flex: 0 0 40px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .notification-content {
+    flex: 1;
+    margin-left: 15px;
+  }
+  
+  .notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .notification-title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  
+  .notification-time {
+    font-size: 0.8rem;
+    color: #6c757d;
+  }
+  
+  .notification-body p {
+    margin-bottom: 10px;
+  }
+  
+  .notification-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Notification Bell */
+  .notification-bell {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .notification-bell .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 0.7rem;
+    padding: 0.25em 0.6em;
+  }
+  
+  /* Notification Badge in Header */
+  .notification-badge {
+    position: relative;
+    display: inline-block;
+    font-size: 0.7rem;
+    padding: 0.25em 0.6em;
+  }
+  
+  .notification-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Notification Dropdown */
+  .notification-dropdown {
+    width: 350px;
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .notification-dropdown .dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .notification-dropdown .dropdown-body {
+    max-height: 350px;
+    overflow-y: auto;
+  }
+  
+  .notification-dropdown .dropdown-footer {
+    padding: 10px 15px;
+    text-align: center;
+    border-top: 1px solid #eee;
+  }
+  
+  .notification-dropdown .notification-item {
+    padding: 10px 15px;
+  }
+  
+  /* Notification Empty */
+  .notification-empty {
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+  }
+  
+  .notification-empty i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #dee2e6;
+  }
+  
+  /* Notification Types */
+  .notification-info .notification-icon {
+    color: #0dcaf0;
+  }
+  
+  .notification-success .notification-icon {
+    color: #198754;
+  }
+  
+  .notification-warning .notification-icon {
+    color: #ffc107;
+  }
+  
+  .notification-error .notification-icon {
+    color: #dc3545;
+  }
+  
+  /* Notification Settings */
+  .notification-settings-section {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .notification-settings-section h5 {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 10px;
+  }
+  
+  .form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  /* Settings page */
+  .form-switch .form-check-input {
+    width: 3em;
+    height: 1.5em;
+  }
+  
+  .form-switch .form-check-input:checked {
+    background-color: #198754;
+    border-color: #198754;
+  }
+  
+  /* Empty state */
+  .empty-notifications {
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .empty-notifications i {
+    font-size: 3rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+  }
+  
